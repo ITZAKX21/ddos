@@ -18,24 +18,24 @@
 ☆INSTALL☆
 </h2>
 
-*`
+`
 pkg update && upgrade -y
 `
-*`
+`
 pkg install git -y
 `
-*`
+`
 git clone https://github.com/AK27X/ddos
 `
-*`
+`
 pkg install python -y
 `
 
 <h5 align="center">☆[RUN]☆<h5>
-*`
+`
 cd ddos
 `
-*`
+`
 python ddos.py
 `
 <p align="center">
@@ -43,7 +43,7 @@ python ddos.py
 </p>
 <h4 align="center">☆[UNINSTALL]☆<h4>
 
-*`
+`
 rm -rf ddos
 `
 
