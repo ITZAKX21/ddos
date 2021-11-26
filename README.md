@@ -3,7 +3,7 @@
 </h1>
 
 <h2 align="center">
-☆All in '1'☆
+☆DDOS TOOL☆
 </h2>
 
 <p align="center">
@@ -14,12 +14,9 @@
 <a href="https://github.com/AK27X"><img title="Republic of Bangladesh" src="https://img.shields.io/badge/MADE%20IN-BANGLADESH-green?colorA=%23ff0000&colorB=%23017e40&style=flat"></a> 
 </p><br>
 
-<h2 align="center">☆[INFORMATION]☆</h2>
-
-* DDOS TOOL😴😴 <br>Thanks For Using.<br></p>
-
-
-<h3 align="center">☆[INSTALL]☆</h3>
+<h2 align="center">
+☆INSTALL☆
+</h2>
 
 *`
 pkg update && upgrade -y
