@@ -42,10 +42,7 @@ cd ddos
 
 `
 python ddos.py -s www.example.com
-`
-*AND
-
-`python3 ddos.py -s www.example.com`
+` or `python3 ddos.py -s www.example.com`
 
 <p align="center">
   <img alt="Layout" src="ddos.jpg">
