@@ -21,12 +21,15 @@
 `
 pkg update && upgrade -y
 `
+
 `
 pkg install git -y
 `
+
 `
 git clone https://github.com/AK27X/ddos
 `
+
 `
 pkg install python -y
 `
@@ -35,9 +38,11 @@ pkg install python -y
 `
 cd ddos
 `
+
 `
 python ddos.py
 `
+
 <p align="center">
   <img alt="Layout" src="ddos.jpg">
 </p>
@@ -49,5 +54,5 @@ rm -rf ddos
 
 <h6 align="center">
 ☆CONTACT☆
-</h5>
+</h6>
 <p align="center"><a href="https://AK27X.github.io"><img title="CONTACT" src="https://img.shields.io/badge/CONTACT%20WITH-AK27X-green?colorA=%23ff0000&colorB=%23017e40&style=flat"></a>
