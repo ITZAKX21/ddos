@@ -6,7 +6,7 @@ A SIMPLE PYTHON SCRIPT FOR CIRCLE INFORMATION
 ````
 pkg update && upgrade -y
 pkg install git -y
-git clone https://github.com/AK27X/ddos
+git clone https://github.com/itzakx21/ddos
 pkg install python -y
 cd ddos
 python ddos.py -s www.example.com or python3 ddos.py -s www.example.com
